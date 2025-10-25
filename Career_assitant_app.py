@@ -5,13 +5,23 @@ import joblib
 from sklearn.preprocessing import StandardScaler
 
 
-clf = joblib.load(r"placement_tier_classifier.pkl")
-scaler = joblib.load(r"placement_scaler.pkl")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+
+MODEL_PATH = BASE_DIR / "placement_tier_classifier.pkl"
+SCALER_PATH = BASE_DIR / "placement_scaler.pkl"
+PROF_DB = BASE_DIR / "Enhanced_Professor_Database.csv"
+STUDENT_XLSX = BASE_DIR / "Student_Data_With_Extras.xlsx"
+
+
+clf = joblib.load(MODEL_PATH)
+scaler = joblib.load(SCALER_PATH)
 
 
 @st.cache_data
 def load_mentor_data():
-    return pd.read_csv("Enhanced_Professor_Database.csv")
+    return pd.read_csv(PROF_DB)
 
 mentor_df = load_mentor_data()
 
@@ -48,8 +58,8 @@ def match_top_mentors(field_interest, top_n=3):
     ]]
 
 # ───────── UI Layout ──────────
-st.set_page_config(page_title="AI Career Advisor", layout="centered")
-st.title("🎯 AI-Powered Career Advisor")
+st.set_page_config(page_title="CareerMentor AI", layout="centered")
+st.title("🤖 CareerMentor AI")
 
 tab1, tab2 = st.tabs(["🎓 Mentor Matching", "💼 Placement Predictor"])
 

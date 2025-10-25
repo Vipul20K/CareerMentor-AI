@@ -6,8 +6,13 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report
 from tech_recommender import recommend_skills 
 
+from pathlib import Path
 
-df = pd.read_excel("Student_Data_With_Extras.xlsx")
+BASE_DIR = Path(__file__).parent
+STUDENT_XLSX = BASE_DIR / "Student_Data_With_Extras.xlsx"
+
+
+df = pd.read_excel(STUDENT_XLSX)
 
 def placement_to_tier(salary):
     if salary >= 2000000:

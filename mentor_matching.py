@@ -1,6 +1,12 @@
 import pandas as pd
+from pathlib import Path
 
-prof_df = pd.read_csv("Enhanced_Professor_Database.csv")
+BASE_DIR = Path(__file__).parent
+
+PROF_DB = BASE_DIR / "Enhanced_Professor_Database.csv"
+
+
+prof_df = pd.read_csv(PROF_DB)
 
 def match_top_mentors(field_interest, top_n=3):
     """
