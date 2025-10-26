@@ -1,30 +1,37 @@
-# AI-Powered Career Assistant (End-to-End)
+# 🧠 AI-Powered Career Guidance Platform
 
-## Introduction
+## 📘 Introduction
 
-This project is a **Streamlit web application** designed to assist students in their academic and career journey using Machine Learning models. It includes intelligent modules for:
+This project is an **interactive Streamlit web application** designed to help students in their academic and career journey using **Machine Learning**.  
+It leverages data-driven insights to provide personalized recommendations through three core modules:
 
-- Recommending technical skills based on a student's field of interest and current competencies
-- Matching students with professors for mentorship based on performance and feedback
-- Predicting placement tier based on academic scores, coding profiles, projects, internships, and soft skills
+- 🎯 **Skill Recommender** – Suggests relevant technologies and skills based on a student’s current competencies and field of interest.  
+- 👨‍🏫 **Mentor Matcher** – Recommends professors for mentorship using feedback, experience, and past mentee performance.  
+- 💼 **Placement Predictor** – Predicts a student’s placement tier using academic, coding, and soft-skill indicators.
 
-The goal of this project is to create a user-friendly career advisory platform using real and simulated datasets, machine learning models, and an interactive interface.
+The goal of this project is to create an intuitive, AI-assisted career advisory tool combining real and simulated data, ML models, and an easy-to-use interface.
 
-### Dataset
+---
 
-- Student-related data including academic performance, skills, projects, internships, and placement history.
-- Professor-related data including feedback, experience, and mentorship effectiveness.
-- Combined and preprocessed into training-ready structured datasets.
+## 🧩 Datasets
 
-## Project Overview
+- **Student Dataset:** Includes academic performance, projects, internships, coding profile, and placement details.  
+- **Professor Dataset:** Contains mentorship effectiveness, feedback ratings, and experience metrics.  
+- The datasets are merged, cleaned, and transformed into structured, ML-ready formats.
 
-This end-to-end system includes:
+---
 
-1. **Skill Recommender**: Computes match score between a student’s skills and the target domain, and recommends relevant technologies.
-2. **Mentor Matching**: Ranks and recommends professors based on their teaching field, student feedback, mentorship quality, and experience.
-3. **Placement Prediction**: Classifies students into placement tiers using a Random Forest Classifier model trained on combined academic and professional features.
-4. **Streamlit App**: Provides an interactive web interface to access all three modules.
-5. **Deployment Ready**: Modular codebase for integration into full-stack apps using Flask or FastAPI in the future.
+## ⚙️ Project Overview
+
+This end-to-end system comprises the following components:
+
+1. **Skill Recommender** – Computes a skill match percentage and suggests technologies to learn.  
+2. **Mentor Matcher** – Recommends professors based on experience, feedback, and student outcomes.  
+3. **Placement Predictor** – Uses a **Random Forest Classifier** trained on academic and skill-based data to predict placement tiers.  
+4. **Streamlit App** – Provides a unified, interactive interface to access all modules.  
+5. **Deployment Ready** – Designed for easy integration with backends like Flask or FastAPI.
+
+---
 
 ## Model Download and Directory Structure
 
@@ -126,3 +133,11 @@ This AI-powered platform provides a comprehensive solution for skill analysis, c
 - Integrate login/user tracking and history saving
 - Deploy to cloud platforms (Streamlit Cloud, Render, Heroku)
 - Build frontend in React and backend in FastAPI for scalability
+
+✨ Author
+
+Vipul Kumar
+📧 Email: vipulkr20602@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/vipul-kumar-212445256/
+🐙 GitHub: https://github.com/Vipul20K
+
